@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Store - Groceries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Department Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#groceries">Groceries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Discover a wide range of grocery products at unbeatable prices!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our department store, our mission, and our values.</p>
+    </section>
+
+    <section id="groceries">
+        <h2>Groceries</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>Rice</h3>
+                <p>Description: High-quality basmati rice.</p>
+                <p>Rate: $10 per kg</p>
+                <p>Availability: In Stock</p>
+                <form class="order-form">
+                    <label for="quantity-rice">Quantity (kg):</label>
+                    <input type="number" id="quantity-rice" name="quantity-rice" min="1" required>
+                    <button type="submit">Order</button>
+                </form>
+            </div>
+            <div class="product">
+                <h3>Sugar</h3>
+                <p>Description: Pure cane sugar.</p>
+                <p>Rate: $5 per kg</p>
+                <p>Availability: In Stock</p>
+                <form class="order-form">
+                    <label for="quantity-sugar">Quantity (kg):</label>
+                    <input type="number" id="quantity-sugar" name="quantity-sugar" min="1" required>
+                    <button type="submit">Order</button>
+                </form>
+            </div>
+            <div class="product">
+                <h3>Wheat Flour</h3>
+                <p>Description: Whole wheat flour.</p>
+                <p>Rate: $7 per kg</p>
+                <p>Availability: Out of Stock</p>
+                <form class="order-form">
+                    <label for="quantity-wheat">Quantity (kg):</label>
+                    <input type="number" id="quantity-wheat" name="quantity-wheat" min="1" required>
+                    <button type="submit" disabled>Order</button>
+                </form>
+            </div>
+            <div class="product">
+                <h3>Milk</h3>
+                <p>Description: Fresh dairy milk.</p>
+                <p>Rate: $2 per liter</p>
+                <p>Availability: In Stock</p>
+                <form class="order-form">
+                    <label for="quantity-milk">Quantity (liters):</label>
+                    <input type="number" id="quantity-milk" name="quantity-milk" min="1" required>
+                    <button type="submit">Order</button>
+                </form>
+            </div>
+            <div class="product">
+                <h3>Eggs</h3>
+                <p>Description: Organic farm eggs.</p>
+                <p>Rate: Rs.5 [1 egg]</p>
+                <p>Availability: In Stock</p>
+                <form class="order-form">
+                    <label for="quantity-eggs">Quantity (dozen):</label>
+                    <input type="number" id="quantity-eggs" name="quantity-eggs" min="1" required>
+                    <button type="submit">Order</button>
+                </form>
+            </div>
+            <!-- Add more grocery products as needed -->
+        </div>
+    </section>
+               <form action="mailto:kavinrovers@gmail.com?subject=Client Information&body=" method="post" enctype="text/plain">
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" style="background-color: green; color: white; font-size: 18px;">Send</button>
+            <button type="reset" style="background-color: red; color: white; font-size: 18px;">Cancel</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Department Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
